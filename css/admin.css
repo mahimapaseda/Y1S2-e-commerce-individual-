@@ -1,0 +1,187 @@
+/* General Admin Panel Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #1e90ff;
+    padding: 1rem 2rem;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* Center-align navigation links */
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-links li {
+    margin-left: 1.5rem;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .nav-links a:hover,
+header .nav-links a.active {
+    background-color: #f0f0f0;
+    color: #1e90ff;
+    border-radius: 5px;
+}
+
+main {
+    padding: 6rem 2rem 2rem 2rem;
+    background-color: #afdbff;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.admin-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form .button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form .button:hover {
+    background-color: #1c86ee;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+
+.dashboard-summary {
+    display: flex; /* Use Flexbox to align children horizontally */
+    gap: 1rem; /* Adds space between the summary boxes */
+    justify-content: space-between; /* Distribute space evenly */
+    margin-bottom: 1rem; /* Space below the summary section */
+}
+
+.summary-box {
+    background-color: #fff; /* White background for each summary box */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 1rem; /* Padding inside each box */
+    text-align: center; /* Center-align text */
+    flex: 1; /* Allow each box to grow equally */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for visual effect */
+}
+
+.summary-box h3 {
+    margin: 0 0 0.5rem 0; /* Margin below the heading */
+}
+
+.summary-box p {
+    font-size: 1.5rem; /* Larger font size for the value */
+    margin: 0; /* Remove default margin */
+}
+

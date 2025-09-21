@@ -1,0 +1,180 @@
+/* account.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background-color: #1e90ff;
+    padding: 1rem 3rem;
+    color: white;
+    position: fixed;
+    width: 96%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+    color: #1e90ff;
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    max-width: 300px;
+    width: 100%;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    border-right: none;
+}
+
+.search-bar .search-button {
+    background-color: white;
+    color: #1e90ff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar .search-button:hover {
+    background-color: #1c86ee;
+}
+
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-buttons li {
+    margin-left: 1.5rem;
+}
+
+.nav-buttons .button {
+    background-color: white;
+    color: #1e90ff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-buttons .button:hover {
+    background-color: #f0f0f0;
+}
+
+.cart-button {
+    background-color: #001660;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.cart-button:hover {
+    background-color: #001660;
+}
+
+/* account.css */
+
+/* Content Container */
+.content-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.content-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1e90ff;
+}
+
+.content-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.content-container .button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.content-container .button:hover {
+    background-color: #1c86ee;
+}
+
+.content-container .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.4);
+}
+
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
